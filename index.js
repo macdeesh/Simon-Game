@@ -5,8 +5,6 @@ var userClickedPattern = [];
 var level = 0;
 var started = false;
 
-alert("Hey Agatha Christie !! Welcome to the Game of the year 😜");// Alert For a friend
-
 function nextSequence() {
     userClickedPattern.length = 0; // Reset the array. 
     var randomNumber = Math.floor(Math.random() * 4); // Choose a random number between 0 and 3.
@@ -58,7 +56,6 @@ function checkAnswer(currentLevel) {
         });
         playSound ("wrong");
         $("h1").text("Game Over, Press Any Key to Restart");// Change text
-        setTimeout(function () { alert("Nice Try Agatha !! Back to work now 😂 "); }, 1000);// Alert For a friend
         startOver ();
     }
 }
